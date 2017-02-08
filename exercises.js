@@ -26,7 +26,8 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
-
+var bango1 = 5;
+var bango2 = 2;
 
 
 /*
@@ -44,6 +45,12 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `sum` to test your code.
 */
 
+function add(num1, num2){
+	return num1 + num2;
+}
+
+var sum = add(bango1, bango2);
+console.log(sum);
 
 
 /*
@@ -60,7 +67,12 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `difference` to test your code.
 */ 
 
+function subtract(num1, num2){
+	return num1 - num2;
+}
 
+var difference = subtract(bango1, bango2);
+console.log(difference);
 
 /*
  * #4
@@ -264,7 +276,16 @@ console.log(testGreeting); // printing the output value of the function.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
 
+function verifyDrinkAge(age){
+	if(age >= 21){
+		return true;
+	}else {
+		return false;
+	}
+}
 
+var canDrink = verifyDrinkAge(24);
+console.log (canDrink);
 
 /**
  * #18
@@ -273,7 +294,13 @@ console.log(testGreeting); // printing the output value of the function.
  */
 
 
+function throwParty(){
+	if(canDrink === true){
+		return "Cheee Hoo! We going to da party!";
+	}else{
+		return "Meh, see you at Starbucks.";
+	}
+}
 
-
-
-
+var canParty
+console.log ()
