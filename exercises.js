@@ -128,7 +128,11 @@ console.log(quotient);
  * Console.log your result.
 */
 
+function checkSum(x){
+	return "Mariah Carey has been married " + x + " times.";
+}
 
+console.log(checkSum(sum));
 
 /*
  * #7
@@ -142,7 +146,12 @@ console.log(quotient);
  * Console.log your results.
 */ 
 
+function checkDifference(x){
+	return "Last night I dreamt that I ate " + x + " Taco Bell soft tacos.";
+}
 
+var difference = subtract(bango1, bango2);
+console.log(checkDifference(difference));
 
 /*
  * #8
