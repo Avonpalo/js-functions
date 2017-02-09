@@ -347,7 +347,7 @@ function verifyDrinkAge(age){
 	}
 }
 
-var canDrink = verifyDrinkAge(24);
+var canDrink = verifyDrinkAge(20);
 console.log (canDrink);
 
 /**
@@ -357,7 +357,7 @@ console.log (canDrink);
  */
 
 
-function throwParty(){
+function throwParty(canDrink){
 	if(canDrink === true){
 		return "Cheee Hoo! We going to da party!";
 	}else{
@@ -365,5 +365,5 @@ function throwParty(){
 	}
 }
 
-var canParty
-console.log ()
+var canParty;
+console.log (canDrink);
