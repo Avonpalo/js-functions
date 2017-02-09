@@ -164,7 +164,11 @@ console.log(checkDifference(difference));
  * Console.log your result.  
 */
 
+function checkProduct(){
+	return sum * product;
+}
 
+console.log(checkProduct());
 
 /*
  * #9
@@ -177,7 +181,11 @@ console.log(checkDifference(difference));
  * Console.log your result.  
 */
 
+function checkQuotient(){
+	return product * quotient;
+}
 
+console.log(checkQuotient());
 
 /*
  * #10
@@ -199,6 +207,15 @@ console.log(checkDifference(difference));
  * Console.log your result.
 */ 
 
+var bango3 = 4;
+var bango4 = 5;
+var bango5 = 7;
+
+function addThenSubtract(num1, num2, num3){
+	return (num1 + num2) - num3;
+}
+
+console.log(addThenSubtract(bango3, bango4, bango5));
 
 
 /*
@@ -215,7 +232,11 @@ console.log(checkDifference(difference));
  * Console.log your result.
 */ 
 
+function multiplyThenDivide(num1, num2, num3){
+	return (num1 * num2) / num3;
+}
 
+console.log(multiplyThenDivide(bango3, bango4, bango5));
 
 /*
  * #12
@@ -229,7 +250,14 @@ console.log(checkDifference(difference));
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
 
+function createFullName(firstName, lastName){
+	return firstName + lastName;
+}
 
+var firstName = "Ann";
+var lastName = " Yamauchi";
+var myFullName = firstName + lastName;
+console.log(myFullName);
 
 /*
  * #13 
@@ -245,7 +273,12 @@ console.log(checkDifference(difference));
  * Console.log your result.
  */
 
+function eatFood(firstName, lastName, food){
+	return createFullName + " eats" + food + "everyday.";
 
+}
+
+console.log(eatFood("Ann", "Yamauchi", "chicken curry"));
 
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
@@ -260,7 +293,11 @@ console.log(checkDifference(difference));
  * Console.log your result. 
 */
 
+function shoeSize(inches){
+	return inches * 2.54;
+}
 
+console.log(shoeSize(5));
 
 /*
  * #15
@@ -272,7 +309,11 @@ console.log(checkDifference(difference));
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
  
+function allCaps(str){
+	return str.toUpperCase();
+}
 
+console.log(allCaps("There's no place like home."));
 
 /*
  * #16
@@ -282,7 +323,10 @@ console.log(checkDifference(difference));
  * Console.log your result.
 */
 
-
+function oneCap(str){
+	return str[0].toUpperCase() + str.slice(1);
+}
+console.log(oneCap("i want it now!"));
 
 /*
  * #17
