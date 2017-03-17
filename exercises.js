@@ -26,9 +26,8 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
-var bango1 = 5;
+var bango1 = 4;
 var bango2 = 2;
-
 
 /*
  * #2
@@ -45,6 +44,14 @@ var bango2 = 2;
  * Console.log `sum` to test your code.
 */
 
+function add(num1, num2){
+	return num1 + num2;
+}
+
+var sum = add(bango1, bango2);
+console.log(sum);
+
+/*
 function add(num1, num2){
 	return num1 + num2;
 }
@@ -75,6 +82,14 @@ var difference = subtract(bango1, bango2);
 console.log(difference);
 
 /*
+function subtract(num1, num2){
+	return num1 - num2;
+}
+
+var difference = subtract(bango1, bango2);
+console.log(difference);
+
+/*
  * #4
  * Function - multiply
  * Create a function named `multiply` which will take two parameters: `num1` and `num2`.
@@ -88,6 +103,14 @@ console.log(difference);
  * Console.log `product` to test your code.
 */
 
+function multiply(num1, num2){
+	return num1 * num2;
+}
+
+var product = multiply(bango1, bango2);
+console.log(product);
+
+/*
 function multiply(num1, num2){
 	return num1 * num2;
 }
@@ -117,6 +140,14 @@ var quotient = divide(bango1, bango2);
 console.log(quotient);
 
 /*
+function divide(num1, num2){
+	return num1 / num2;
+}
+
+var quotient = divide(bango1, bango2);
+console.log(quotient);
+
+/*
  * #6
  * Function - checkSum
  * Create a function named `checkSum` which will take a parameter: `x`.
@@ -128,6 +159,14 @@ console.log(quotient);
  * Console.log your result.
 */
 
+function checkSum(x){
+	return "Mariah Carey has been married " + x + " times.";
+}
+
+var sum = checkSum(3);
+console.log(sum);
+
+/*
 function checkSum(x){
 	return "Mariah Carey has been married " + x + " times.";
 }
@@ -146,6 +185,14 @@ console.log(checkSum(sum));
  * Console.log your results.
 */ 
 
+function checkDifference(x){
+	return "Last night I dreamt that I ate " + x + " Taco Bell soft tacos.";
+}
+
+var difference = checkDifference(22);
+console.log(difference);
+
+/*
 function checkDifference(x){
 	return "Last night I dreamt that I ate " + x + " Taco Bell soft tacos.";
 }
@@ -171,6 +218,13 @@ function checkProduct(){
 console.log(checkProduct());
 
 /*
+function checkProduct(){
+	return sum * product;
+}
+
+console.log(checkProduct());
+
+/*
  * #9
  * Function - checkQuotient
  * Create a function named `checkQuotient` which does not require any parameters.
@@ -181,6 +235,13 @@ console.log(checkProduct());
  * Console.log your result.  
 */
 
+function checkQuotient(){
+	return product * quotient;
+}
+
+console.log(checkQuotient());
+
+/*
 function checkQuotient(){
 	return product * quotient;
 }
@@ -207,6 +268,18 @@ console.log(checkQuotient());
  * Console.log your result.
 */ 
 
+var bango3 = 1;
+var bango4 = 3;
+var bango5 = 2;
+
+function addThenSubtract(num1, num2, num3){
+	return (num1 + num2) - num3;
+}
+
+var resultATS = addThenSubtract(bango3, bango4, bango5);
+console.log(resultATS);
+
+/*
 var bango3 = 4;
 var bango4 = 5;
 var bango5 = 7;
@@ -236,6 +309,14 @@ function multiplyThenDivide(num1, num2, num3){
 	return (num1 * num2) / num3;
 }
 
+var resultMTD = multiplyThenDivide(bango3, bango4, bango5);
+console.log(resultMTD);
+
+/*
+function multiplyThenDivide(num1, num2, num3){
+	return (num1 * num2) / num3;
+}
+
 console.log(multiplyThenDivide(bango3, bango4, bango5));
 
 /*
@@ -250,6 +331,14 @@ console.log(multiplyThenDivide(bango3, bango4, bango5));
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
 
+function createFullName(firstName, lastName){
+	return firstName + lastName;
+}
+
+var myFullName = createFullName("Ann", " Yamauchi");
+console.log(myFullName);
+
+/*
 function createFullName(firstName, lastName){
 	return firstName + lastName;
 }
@@ -274,6 +363,14 @@ console.log(myFullName);
  */
 
 function eatFood(firstName, lastName, food){
+	return firstName + lastName + "eats" + food + " everyday for breakfast.";
+}
+
+var whole = eatFood("Jackie", " Chan ", " chicken tofu");
+console.log(whole);
+
+/*
+function eatFood(firstName, lastName, food){
 	return createFullName + " eats" + food + "everyday.";
 
 }
@@ -294,6 +391,14 @@ console.log(eatFood("Ann", "Yamauchi", "chicken curry"));
 */
 
 function shoeSize(inches){
+	return "The conversion of " + inches + " inches is " + (inches * 2.54) + " centimeters(cm)";
+}
+
+var resultSS = shoeSize(2);
+console.log(resultSS);
+
+/*
+function shoeSize(inches){
 	return inches * 2.54;
 }
 
@@ -308,7 +413,15 @@ console.log(shoeSize(5));
  * Example input: "believe you can and you're halfway there."
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
- 
+
+function allCaps(str){
+	return str.toUpperCase();
+}
+
+var resultAC = allCaps("make good choices");
+console.log(resultAC);
+
+/* 
 function allCaps(str){
 	return str.toUpperCase();
 }
@@ -319,10 +432,17 @@ console.log(allCaps("There's no place like home."));
  * #16
  * Function oneCap
  * Create a function that will take in a parameter named `str`. 
- * This function will capitalize only the first letter in the variable phase above. 
+ * This function will capitalize only the first letter in the variable phrase above. 
  * Console.log your result.
 */
 
+function oneCap(str){
+	return str[0].toUpperCase() + str.slice(1);
+}
+
+console.log(oneCap("hope to see you again!"));
+
+/*
 function oneCap(str){
 	return str[0].toUpperCase() + str.slice(1);
 }
@@ -339,6 +459,19 @@ console.log(oneCap("i want it now!"));
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
 
+function verifyDrinkingAge(age){
+	if(age >= 21){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+var canDrink = verifyDrinkingAge(17);
+console.log(canDrink);
+
+
+/*
 function verifyDrinkAge(age){
 	if(age >= 21){
 		return true;
@@ -347,7 +480,7 @@ function verifyDrinkAge(age){
 	}
 }
 
-var canDrink = verifyDrinkAge(20);
+var canDrink = verifyDrinkAge(18);
 console.log (canDrink);
 
 /**
@@ -358,6 +491,18 @@ console.log (canDrink);
 
 
 function throwParty(canDrink){
+	if (canDrink === true){
+		return "Cheee Hoo! We going to da party!";
+	}else{
+		return "Meh, see you at Starbucks.";
+	}
+}
+
+var canParty = throwParty(canDrink);
+console.log(canParty);
+
+/*
+function throwParty(canDrink){
 	if(canDrink === true){
 		return "Cheee Hoo! We going to da party!";
 	}else{
@@ -365,5 +510,7 @@ function throwParty(canDrink){
 	}
 }
 
-var canParty;
-console.log (canDrink);
+var canParty = canDrink;
+console.log (canParty);
+
+*/
